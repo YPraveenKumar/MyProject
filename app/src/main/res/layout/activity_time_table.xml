@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_pink_Byjus"
+    android:layout_width="match_parent"
+    >
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    tools:context=".TimeTableFragments.TimeTable">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlTimeTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        android:background="@color/light_blue"
+        app:tabTextColor="@color/colorBlack"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiMOn"
+            android:text="@string/monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiTUe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiWed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday"
+            android:textAlignment="center"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiFri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fri_day"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiSat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/satur_day"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiSun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sun_day"
+            />
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLAyoutTImmeTAble"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tlTimeTable"
+        android:layout_marginEnd="10dp">
+    </FrameLayout>
+</RelativeLayout>
+</ScrollView>

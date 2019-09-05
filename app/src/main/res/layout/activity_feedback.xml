@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramRegistration.Feedback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RatingBar
+            android:id="@+id/rbFeedbackRBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/yellow"
+            />
+        <EditText
+            android:id="@+id/etFeedback"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:hint="@string/give_your_feedback"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:background="@drawable/rectangle_curved_black"
+            android:gravity="center"
+            tools:ignore="Autofill,TextFields" />
+    </RelativeLayout>
+
+</FrameLayout>

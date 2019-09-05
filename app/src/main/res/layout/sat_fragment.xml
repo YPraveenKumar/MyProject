@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <ImageView
+        android:id="@+id/ivSat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/saturday"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivSat"
+        android:padding="45dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/sports_day"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/extra_curricular"
+        android:layout_marginTop="110dp"
+        android:scaleType="fitXY"
+        />
+</RelativeLayout>

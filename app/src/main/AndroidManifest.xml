@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.stuantlogin">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path_provider" />
+        </provider>
+        <activity android:name=".AdminPage.StuCornerAdmin"></activity>
+        <activity android:name=".Dashboard.TimeTableSTD" />
+        <activity android:name=".AdminPage.TimeTableAdmin" />
+        <activity android:name=".TimeTableFragments.TimeTableEdit" />
+        <activity android:name=".AdminPage.AssessmentList" />
+        <activity android:name=".AdminPage.BillHistory" />
+        <activity android:name=".AdminPage.AdminAnnouncement" />
+        <activity android:name=".AdminPage.AssessmentAdmin" />
+        <activity android:name=".Dashboard.AddNotes" />
+        <activity android:name=".AdminPage.BillingDeatils" />
+        <activity android:name=".AdminPage.StudentList" />
+        <activity android:name=".AdminPage.StudentReg" />
+        <activity android:name=".AdminPage.AdminDashBoard" />
+        <activity android:name=".AdminPage.AdminLogIN" />
+        <activity android:name=".Dashboard.LogIN" />
+        <activity android:name=".Dashboard.BookList" />
+        <activity android:name=".ProgramRegistration.Preview" />
+        <activity
+            android:name=".Dashboard.Transport"
+            android:label="TRANSPORT" />
+        <activity
+            android:name=".Dashboard.Announcements"
+            android:label="ANNOUNCEMENTS" />
+        <activity
+            android:name=".Dashboard.Assessment"
+            android:label="ASSESSMENTS" />
+        <activity
+            android:name=".TimeTableFragments.TimeTable"
+            android:label="TIME TABLE" />
+        <activity
+            android:name=".Dashboard.Billing"
+            android:label="BILLING" />
+        <activity
+            android:name=".Dashboard.StudentDetails"
+            android:label="STUDENT DETAILS" />
+        <activity
+            android:name=".ProgramRegistration.Feedback"
+            android:label="FEEDBACK" />
+        <activity
+            android:name=".ProgramRegistration.ClassSubject"
+            android:label="ACTIVITY DETAILS" />
+        <activity
+            android:name=".ProgramRegistration.SubjectMaster"
+            android:label="SUBJECT MASTER" />
+        <activity
+            android:name=".ProgramRegistration.ClassMaster"
+            android:label="CLASS MASTER" />
+        <activity
+            android:name=".ProgramRegistration.ProgramMaster"
+            android:label="PROGRAM MASTER" />
+        <activity
+            android:name=".Dashboard.ProgramReg"
+            android:label="PROGRAM REGISTRATION" />
+        <activity
+            android:name=".Dashboard.StudentRegistration"
+            android:label="STUDENT REGISTRATION" />
+        <activity
+            android:name=".Dashboard.DashBoardHome"
+            android:label="HOME" />
+        <activity
+            android:name=".StudentLogIN.ForgotPassword"
+            android:label="FORGOT PASSWORD" />
+        <activity
+            android:name=".StudentLogIN.SignUp"
+            android:label="SIGN-UP" />
+        <activity
+            android:name=".StudentLogIN.MainActivity"
+            android:label="STUANT SIGN-IN" />
+        <activity
+            android:name=".StudentLogIN.SplashScreen"
+            android:label="STUANT"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>

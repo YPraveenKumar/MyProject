@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPage.BillHistory">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svBillList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Name"
+        android:background="@drawable/rectangle_border_tranparent"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBillList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/svBillList"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>
+
+
+</ScrollView>

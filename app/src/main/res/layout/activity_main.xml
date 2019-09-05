@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink_Byjus"
+    tools:context=".StudentLogIN.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cvProfilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo"
+            />
+
+        <EditText
+            android:id="@+id/etLogin_EmailID"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvProfilePic"
+            android:layout_centerHorizontal="true"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/colorBlue"
+            android:textSize="17sp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/e_mail"
+            android:textAlignment="center"
+            tools:targetApi="lollipop"
+            tools:ignore="Autofill,TextFields" />
+        <EditText
+            android:id="@+id/etLogin_Password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etLogin_EmailID"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:inputType="textWebPassword"
+            android:backgroundTint="@color/colorBlue"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            android:textAlignment="center"
+            tools:targetApi="lollipop"
+            tools:ignore="Autofill,TextFields" />
+        <Button
+            android:id="@+id/btnLogIN"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="@string/sign_in"
+            android:layout_below="@id/etLogin_Password"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/oval_shape"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/tvLogin_SignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_marginTop="25dp"
+            android:onClick="signUpActivity"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_curved_transparent"
+            android:backgroundTint="@color/colorPrimary"
+            android:textSize="15sp"
+            android:layout_below="@id/tvLogin_ForgotPassword"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            tools:targetApi="lollipop"
+            />
+
+        <TextView
+            android:id="@+id/tvLogin_ForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_below="@id/btnLogIN"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="forgotPasswordActivity"
+            android:textStyle="bold"
+            android:background="@drawable/rectangle_curved_transparent"
+            android:text="@string/forgot_password"
+            android:layout_centerHorizontal="true"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/tvAttempts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogIN"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/no_of_attempts_left_5"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.LogIN">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvAdmin"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/admin"
+        android:layout_alignLeft="@id/tvAdmin"
+        android:layout_alignBottom="@id/tvAdmin"
+        android:layout_alignStart="@id/tvAdmin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvStudent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/student"
+        android:layout_alignLeft="@id/tvStudent"
+        android:layout_alignBottom="@id/tvStudent"
+        android:layout_marginLeft="20dp"
+        android:layout_alignStart="@id/tvStudent"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_login"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:onClick="toAdminActivity"
+        android:padding="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:id="@+id/tvStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/student_login"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textAllCaps="true"
+        android:onClick="toMainActivity"
+        android:padding="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvAdmin"
+        />
+
+</RelativeLayout>

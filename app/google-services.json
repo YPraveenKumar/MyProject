@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "11881259675",
+    "firebase_url": "https://stuantlogin-a07ce.firebaseio.com",
+    "project_id": "stuantlogin-a07ce",
+    "storage_bucket": "stuantlogin-a07ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11881259675:android:4369119a38729f96",
+        "android_client_info": {
+          "package_name": "com.example.stuantlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11881259675-qqtflu8j23q7kvjke5pmq1o9sqcmnh7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stuantlogin",
+            "certificate_hash": "97eab2001238db9e1898766ef127c33d77b6b349"
+          }
+        },
+        {
+          "client_id": "11881259675-anfqj5eor8ga3ocgblq896pdopq0563p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxr_rkyEhg5QoaACzGkXIjOYykDF2gIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11881259675-anfqj5eor8ga3ocgblq896pdopq0563p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
