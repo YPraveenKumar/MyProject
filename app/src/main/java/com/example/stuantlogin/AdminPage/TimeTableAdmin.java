@@ -1,5 +1,6 @@
 package com.example.stuantlogin.AdminPage;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.stuantlogin.Dashboard.TimeTableSTD;
 import com.example.stuantlogin.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -46,6 +48,17 @@ public class TimeTableAdmin extends AppCompatActivity {
         btnSave = findViewById(R.id.btnAdminTimeTable);
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("TimeTable");
+
+        if(getIntent() != null){
+            etHr1.setText(getIntent().getStringExtra("Hr1"));
+            etHr2.setText(getIntent().getStringExtra("Hr2"));
+            etHr3.setText(getIntent().getStringExtra("Hr3"));
+            etHr4.setText(getIntent().getStringExtra("Hr4"));
+            etHr5.setText(getIntent().getStringExtra("Hr5"));
+            etHr6.setText(getIntent().getStringExtra("Hr6"));
+            etHr7.setText(getIntent().getStringExtra("Hr7"));
+            etHr8.setText(getIntent().getStringExtra("Hr8"));
+        }
 
 
         ArrayList<String> stdList = new ArrayList<>();
@@ -157,5 +170,9 @@ public class TimeTableAdmin extends AppCompatActivity {
             result = true;
         }
         return result;
+    }
+
+    public void viewTimeTable(View view) {
+        startActivity(new Intent(TimeTableAdmin.this, TimeTableSTD.class));
     }
 }

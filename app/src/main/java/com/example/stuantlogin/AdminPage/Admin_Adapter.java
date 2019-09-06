@@ -90,8 +90,13 @@ public class Admin_Adapter extends RecyclerView.Adapter<Admin_Adapter.AdminViewH
                         case 7:
                             context.startActivity(new Intent(context, TimeTableAdmin.class));
                             break;
-                  case 8:
+
+                        case 8:
                             context.startActivity(new Intent(context, StuCornerAdmin.class));
+                            break;
+
+                        case 9:
+                            context.startActivity(new Intent(context, ProgramDetails.class));
                             break;
                     }
                 }

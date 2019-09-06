@@ -34,8 +34,11 @@ public class AssessmentList extends AppCompatActivity {
         svAssList = findViewById(R.id.svAssessmentList);
         databaseReference = FirebaseDatabase.getInstance().getReference("Assessment Details");
 
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(linearLayoutManager);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
 

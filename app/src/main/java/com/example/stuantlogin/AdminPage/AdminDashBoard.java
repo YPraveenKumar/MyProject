@@ -32,6 +32,7 @@ public class AdminDashBoard extends AppCompatActivity {
         nameList.add("Announcement");
         nameList.add("Sudent TimeTable");
         nameList.add("Sudent Corner");
+        nameList.add("Program Details");
 
         ArrayList<Integer> imageList = new ArrayList<>();
         imageList.add(R.drawable.student_register);
@@ -43,6 +44,7 @@ public class AdminDashBoard extends AppCompatActivity {
         imageList.add(R.drawable.announcements);
         imageList.add(R.drawable.time_table);
         imageList.add(R.drawable.student_corner);
+        imageList.add(R.drawable.program_registration);
 
         Admin_Adapter admin_adapter = new Admin_Adapter(this, nameList, imageList);
         recyclerView.setAdapter(admin_adapter);

@@ -43,6 +43,7 @@ public class AssessmentAdmin extends AppCompatActivity {
     private String sTerm;
     private int Grade;
     private DatabaseReference databaseReference;
+    private AssessmentModel assessmentModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,19 @@ public class AssessmentAdmin extends AppCompatActivity {
         btnSave = findViewById(R.id.btnAssSave);
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Assessment Details");
+
+        if(getIntent()!= null){
+            etName.setText(getIntent().getStringExtra("Name"));
+            etRollNo.setText(getIntent().getStringExtra("RollNo"));
+            etSub1.setText(getIntent().getStringExtra("Sub1"));
+            etSub2.setText(getIntent().getStringExtra("Sub2"));
+            etSub3.setText(getIntent().getStringExtra("Sub3"));
+            etTotal.setText(getIntent().getStringExtra("Total"));
+            etPercentage.setText(getIntent().getStringExtra("Per"));
+            etRecommendation.setText(getIntent().getStringExtra("Rec"));
+            etStuActivity.setText(getIntent().getStringExtra("Activity"));
+            etAttendance.setText(getIntent().getStringExtra("Atten"));
+        }
 
         rgGrade.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@drawable/rectangle_border_tranparent"
     android:layout_height="wrap_content">
 
 
@@ -19,6 +20,8 @@
         android:id="@+id/cvIcon"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:padding="3dp"
+        android:layout_margin="2dp"
         tools:src = "@drawable/ic_account_circle_person"
         />
 

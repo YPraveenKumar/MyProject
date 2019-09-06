@@ -1,6 +1,7 @@
 package com.example.stuantlogin.AdminPage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,14 +33,14 @@ public class Student_List_Adapter extends RecyclerView.Adapter<Student_List_Adap
 
     @Override
     public void onBindViewHolder(@NonNull Stu_ViewHolder holder, int position) {
-        holder.tvname.setText   ("Name:             "+list.get(position).getsName());
-        holder.tvrollno.setText ("\n"+"Roll No:          "+list.get(position).getsRollno());
-        holder.tvGender.setText ("\n"+"Gender:           "+list.get(position).getsGender());
-        holder.tvDate.setText   ("\n"+"Date of Joining:  "+list.get(position).getsDate());
-        holder.tvClass.setText  ("\n"+"Class Name:       "+list.get(position).getsClassName());
-        holder.tvPhone.setText  ("\n"+"Phone Number:     "+list.get(position).getsPhone());
-        holder.tvEmail.setText  ("\n"+"Email Address:    "+list.get(position).getsEmail());
-        holder.tvAddress.setText("\n"+"Address:          "+list.get(position).getsAddress());
+        holder.tvname.setText   (list.get(position).getsName());
+        holder.tvrollno.setText (list.get(position).getsRollno());
+        holder.tvGender.setText (list.get(position).getsGender());
+        holder.tvDate.setText   (list.get(position).getsDate());
+        holder.tvClass.setText  (list.get(position).getsClassName());
+        holder.tvPhone.setText  (list.get(position).getsPhone());
+        holder.tvEmail.setText  (list.get(position).getsEmail());
+        holder.tvAddress.setText(list.get(position).getsAddress());
     }
 
     @Override
@@ -60,6 +61,33 @@ public class Student_List_Adapter extends RecyclerView.Adapter<Student_List_Adap
             tvPhone = itemView.findViewById(R.id.tvStuListPhone);
             tvEmail = itemView.findViewById(R.id.tvStuListEmail);
             tvAddress = itemView.findViewById(R.id.tvStuListAddress);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String name = tvname.getText().toString();
+                    String rollNo = tvrollno.getText().toString();
+                    String gender = tvGender.getText().toString();
+                    String className = tvClass.getText().toString();
+                    String date = tvDate.getText().toString();
+                    String hone = tvPhone.getText().toString();
+                    String email = tvEmail.getText().toString();
+                    String address = tvAddress.getText().toString();
+
+                    Intent stuListIntent = new Intent(context, StudentReg.class);
+
+                    stuListIntent.putExtra("Name", name);
+                    stuListIntent.putExtra("RollNo", rollNo);
+                    stuListIntent.putExtra("Gender", gender);
+                    stuListIntent.putExtra("Class", className);
+                    stuListIntent.putExtra("Date", date);
+                    stuListIntent.putExtra("Phone", hone);
+                    stuListIntent.putExtra("Email", email);
+                    stuListIntent.putExtra("Address", address);
+
+                    context.startActivity(stuListIntent);
+                }
+            });
 
         }
     }

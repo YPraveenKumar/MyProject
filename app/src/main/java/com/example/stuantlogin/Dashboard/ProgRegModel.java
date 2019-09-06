@@ -1,171 +1,174 @@
 package com.example.stuantlogin.Dashboard;
 
 public class ProgRegModel {
-    private String sProgID, sProgCode, sProgType, sProgName, sProgDetails, sProgOrganiser, sProgLMD, sClassID, sClassName, sClassFee, sCLassDuration, sClassDate, sSubID, sSubCode, sSubName, sActName,
-            sActNoOfStud, sActTeamName;
+    private String pID, pCode, pType, pName, pDet, pOrg, pDate, cID, cName, cFee, cTime, cDate, sID, sCode, sName, aName,
+            aNo, aTeamName;
 
-    public ProgRegModel(String sProgID, String sProgCode, String sProgType, String sProgName, String sProgDetails, String sProgOrganiser, String sProgLMD, String sClassID, String sClassName, String sClassFee, String sCLassDuration, String sClassDate, String sSubID, String sSubCode, String sSubName, String sActName, String sActNoOfStud, String sActTeamName) {
-        this.sProgID = sProgID;
-        this.sProgCode = sProgCode;
-        this.sProgType = sProgType;
-        this.sProgName = sProgName;
-        this.sProgDetails = sProgDetails;
-        this.sProgOrganiser = sProgOrganiser;
-        this.sProgLMD = sProgLMD;
-        this.sClassID = sClassID;
-        this.sClassName = sClassName;
-        this.sClassFee = sClassFee;
-        this.sCLassDuration = sCLassDuration;
-        this.sClassDate = sClassDate;
-        this.sSubID = sSubID;
-        this.sSubCode = sSubCode;
-        this.sSubName = sSubName;
-        this.sActName = sActName;
-        this.sActNoOfStud = sActNoOfStud;
-        this.sActTeamName = sActTeamName;
+    public ProgRegModel() {
     }
 
-    public String getsProgID() {
-        return sProgID;
+    public String getcTime() {
+        return cTime;
     }
 
-    public void setsProgID(String sProgID) {
-        this.sProgID = sProgID;
+    public void setcTime(String cTime) {
+        this.cTime = cTime;
     }
 
-    public String getsProgCode() {
-        return sProgCode;
+    public ProgRegModel(String pID, String pCode, String pType, String pName, String pDet, String pOrg, String pDate, String cID, String cName, String cFee, String cTime, String cDate, String sID, String sCode, String sName, String aName, String aNo, String aTeamName) {
+        this.pID = pID;
+        this.pCode = pCode;
+        this.pType = pType;
+        this.pName = pName;
+        this.pDet = pDet;
+        this.pOrg = pOrg;
+        this.pDate = pDate;
+        this.cID = cID;
+        this.cName = cName;
+        this.cFee = cFee;
+        this.cTime = cTime;
+        this.cDate = cDate;
+        this.sID = sID;
+        this.sCode = sCode;
+        this.sName = sName;
+        this.aName = aName;
+        this.aNo = aNo;
+        this.aTeamName = aTeamName;
     }
 
-    public void setsProgCode(String sProgCode) {
-        this.sProgCode = sProgCode;
+    public String getpID() {
+        return pID;
     }
 
-    public String getsProgType() {
-        return sProgType;
+    public void setpID(String pID) {
+        this.pID = pID;
     }
 
-    public void setsProgType(String sProgType) {
-        this.sProgType = sProgType;
+    public String getpCode() {
+        return pCode;
     }
 
-    public String getsProgName() {
-        return sProgName;
+    public void setpCode(String pCode) {
+        this.pCode = pCode;
     }
 
-    public void setsProgName(String sProgName) {
-        this.sProgName = sProgName;
+    public String getpType() {
+        return pType;
     }
 
-    public String getsProgDetails() {
-        return sProgDetails;
+    public void setpType(String pType) {
+        this.pType = pType;
     }
 
-    public void setsProgDetails(String sProgDetails) {
-        this.sProgDetails = sProgDetails;
+    public String getpName() {
+        return pName;
     }
 
-    public String getsProgOrganiser() {
-        return sProgOrganiser;
+    public void setpName(String pName) {
+        this.pName = pName;
     }
 
-    public void setsProgOrganiser(String sProgOrganiser) {
-        this.sProgOrganiser = sProgOrganiser;
+    public String getpDet() {
+        return pDet;
     }
 
-    public String getsProgLMD() {
-        return sProgLMD;
+    public void setpDet(String pDet) {
+        this.pDet = pDet;
     }
 
-    public void setsProgLMD(String sProgLMD) {
-        this.sProgLMD = sProgLMD;
+    public String getpOrg() {
+        return pOrg;
     }
 
-    public String getsClassID() {
-        return sClassID;
+    public void setpOrg(String pOrg) {
+        this.pOrg = pOrg;
     }
 
-    public void setsClassID(String sClassID) {
-        this.sClassID = sClassID;
+    public String getpDate() {
+        return pDate;
     }
 
-    public String getsClassName() {
-        return sClassName;
+    public void setpDate(String pDate) {
+        this.pDate = pDate;
     }
 
-    public void setsClassName(String sClassName) {
-        this.sClassName = sClassName;
+    public String getcID() {
+        return cID;
     }
 
-    public String getsClassFee() {
-        return sClassFee;
+    public void setcID(String cID) {
+        this.cID = cID;
     }
 
-    public void setsClassFee(String sClassFee) {
-        this.sClassFee = sClassFee;
+    public String getcName() {
+        return cName;
     }
 
-    public String getsCLassDuration() {
-        return sCLassDuration;
+    public void setcName(String cName) {
+        this.cName = cName;
     }
 
-    public void setsCLassDuration(String sCLassDuration) {
-        this.sCLassDuration = sCLassDuration;
+    public String getcFee() {
+        return cFee;
     }
 
-    public String getsClassDate() {
-        return sClassDate;
+    public void setcFee(String cFee) {
+        this.cFee = cFee;
     }
 
-    public void setsClassDate(String sClassDate) {
-        this.sClassDate = sClassDate;
+    public String getcDate() {
+        return cDate;
     }
 
-    public String getsSubID() {
-        return sSubID;
+    public void setcDate(String cDate) {
+        this.cDate = cDate;
     }
 
-    public void setsSubID(String sSubID) {
-        this.sSubID = sSubID;
+    public String getsID() {
+        return sID;
     }
 
-    public String getsSubCode() {
-        return sSubCode;
+    public void setsID(String sID) {
+        this.sID = sID;
     }
 
-    public void setsSubCode(String sSubCode) {
-        this.sSubCode = sSubCode;
+    public String getsCode() {
+        return sCode;
     }
 
-    public String getsSubName() {
-        return sSubName;
+    public void setsCode(String sCode) {
+        this.sCode = sCode;
     }
 
-    public void setsSubName(String sSubName) {
-        this.sSubName = sSubName;
+    public String getsName() {
+        return sName;
     }
 
-    public String getsActName() {
-        return sActName;
+    public void setsName(String sName) {
+        this.sName = sName;
     }
 
-    public void setsActName(String sActName) {
-        this.sActName = sActName;
+    public String getaName() {
+        return aName;
     }
 
-    public String getsActNoOfStud() {
-        return sActNoOfStud;
+    public void setaName(String aName) {
+        this.aName = aName;
     }
 
-    public void setsActNoOfStud(String sActNoOfStud) {
-        this.sActNoOfStud = sActNoOfStud;
+    public String getaNo() {
+        return aNo;
     }
 
-    public String getsActTeamName() {
-        return sActTeamName;
+    public void setaNo(String aNo) {
+        this.aNo = aNo;
     }
 
-    public void setsActTeamName(String sActTeamName) {
-        this.sActTeamName = sActTeamName;
+    public String getaTeamName() {
+        return aTeamName;
+    }
+
+    public void setaTeamName(String aTeamName) {
+        this.aTeamName = aTeamName;
     }
 }

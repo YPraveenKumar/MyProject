@@ -14,5 +14,16 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
         />
+    <Button
+        android:id="@+id/btnViewTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnStuStandard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/light_green"
+        android:text="View"
+        android:onClick="ViewTimeTable"
+        />
 
 </RelativeLayout>

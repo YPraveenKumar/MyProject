@@ -26,6 +26,8 @@ public class BillingDeatils extends AppCompatActivity {
     private String sName, sRollno, sClassName, sTotalFee, sPaidFee, sBalanceFee, sDueDate;
     private DatabaseReference databaseReference;
     private Button btnsave;
+    private BillingModel billingModel;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,16 @@ public class BillingDeatils extends AppCompatActivity {
         btnsave = findViewById(R.id.btnBDSave);
         calendar = Calendar.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Billing Details");
+
+        if(getIntent() != null){
+            name.setText(getIntent().getStringExtra("Name"));
+            rollno.setText(getIntent().getStringExtra("RollNo"));
+            className.setText(getIntent().getStringExtra("Class"));
+            totalFee.setText(getIntent().getStringExtra("Total"));
+            paidFee.setText(getIntent().getStringExtra("Paid"));
+            balanceFee.setText(getIntent().getStringExtra("Balance"));
+            dueDate.setText(getIntent().getStringExtra("Date"));
+        }
 
         dueDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +100,8 @@ public class BillingDeatils extends AppCompatActivity {
             }
         });
     }
+
+
 
     private boolean billingValidated() {
         boolean result = false;

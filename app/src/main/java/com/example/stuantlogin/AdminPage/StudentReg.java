@@ -27,6 +27,7 @@ public class StudentReg extends AppCompatActivity {
     private String sName, sRollno, sGender, sDate, sEmail, sAddress, sPhone, sClassName;
     private Calendar calendar;
     private int mDay, mMonth, mYear;
+    private StudentListModel studentListModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,17 @@ public class StudentReg extends AppCompatActivity {
         className = findViewById(R.id.etSRClass);
         save = findViewById(R.id.btnSRSave);
         databaseReference = FirebaseDatabase.getInstance().getReference().child("StudentRegistration");
+
+        if(getIntent() !=null){
+            name.setText(getIntent().getStringExtra("Name"));
+            rollno.setText(getIntent().getStringExtra("RollNo"));
+            gender.setText(getIntent().getStringExtra("Gender"));
+            date.setText(getIntent().getStringExtra("Date"));
+            email.setText(getIntent().getStringExtra("Email"));
+            address.setText(getIntent().getStringExtra("Address"));
+            phone.setText(getIntent().getStringExtra("Phone"));
+            className.setText(getIntent().getStringExtra("Class"));
+        }
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
